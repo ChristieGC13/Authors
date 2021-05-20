@@ -29,7 +29,7 @@ const CreateAuthor = () => {
                 if(res.data.results){
                     navigate("/")
                 }else{
-                    setErrors(res.data.errors)
+                    setErrors(res.data)
                 }
             })
             .catch(err=> console.log(err))

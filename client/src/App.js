@@ -3,6 +3,7 @@ import { Router } from '@reach/router';
 import CreateAuthor from './components/CreateAuthor';
 import AllAuthors from  './components/AllAuthors';
 import DetailAuthor from './components/DetailAuthor';
+import EditAuthor from './components/EditAuthor';
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
         <AllAuthors path="/" />
         <CreateAuthor path="/authors/new" />
         <DetailAuthor path="/authors/:id" />
-        {/* <EditAuthor path="/authors/:id/edit"/> */}
-
+        <EditAuthor path="/authors/edit/:id"/>
       </Router>
     </div>
   );

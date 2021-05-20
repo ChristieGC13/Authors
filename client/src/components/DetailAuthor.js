@@ -19,6 +19,7 @@ const DetailAuthor = (props) => {
             <Link to="/" className="btn btn-outline-info float-right mr-5">Home</Link>
                 <h1 className="mt-5">Deets for {details.name}</h1>
                 <p>Id: {details._id}</p>
+                <p>Likes: {details.likes}</p>
         </div>
     )
 
